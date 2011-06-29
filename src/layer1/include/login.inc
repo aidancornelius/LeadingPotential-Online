@@ -62,7 +62,7 @@ function superdie ($message) {
 
 // Database function (specifically for login)
 
-function initdatabase ($nothing) {
+function initdatabase () {
 	require("config.php");
 	mysql_connect("","","","");
 	return;
