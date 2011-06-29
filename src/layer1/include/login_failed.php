@@ -1,4 +1,4 @@
-<?
+<?php
 // 
 // Copyright (c) 2011, Beaconsfield IT
 // All rights reserved.
@@ -34,79 +34,74 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-/// Getters, Setters, Queries, Functions for Login .hdr file
-/// © 2011 Beaconsfield IT - Created 28 June 2011 by Aidan Cornelius-Bell
+/// Login header template
+/// © 2011 Beaconsfield IT - Created 29 June 2011 by Aidan Cornelius-Bell
 
-// Getters (as a neat integrated fuction)
+echo <<<EOD
 
-function getters() { // THESE ARE NEEDED BEFORE PARSELOGIN IN THE PROCESS PAGE!!!!!!!
-	// Seeing as this is the 'login page' let's give the user a udid 
-	$udid_session = session_id();
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Leading Potential Online :: Error</title>
 
-	// Server attributes that may be needed at some point... Let's put them in RAM.
-	$udid_thetime = time();
-	$udid_thedate = date();
+<link href='http://fonts.googleapis.com/css?family=Raleway:100&v1' rel='stylesheet' type='text/css'>
 
-	// Nice and easy now, let's get some info about our user.
-	$udid_browser = $_SERVER['HTTP_USER_AGENT'];
-	$udid_ipaddr = $_SERVER['REMOTE_ADDR'];
-
+<style type="text/css">
+h1 {
+	font-family: 'Raleway', arial, serif;
+	font-weight: 100;
+	font-size: 18px;
+	text-align: center;
 }
-
-// Die Functions (just makes life easier if we define errors now)
-function superdie ($message) { 
-	die("<br />A Limited Error Occurred: $udid_thedate $udid_thetime - $message");
+p {
+	font-size: 12px;	
 }
-
-// Actuated Functions - Things that come to life, etc, etc...
-
-// Database function (specifically for login)
-
-function initdatabase () {
-	require("config.php");
-	mysql_connect("","","","");
-	return;
+a {
+	color: #000;
 }
-
-// Login master function
-// This needs to produce the login form, check with the database, do all that jazz - you know.
-
-function initlogin () {	
-	// Let's produce some HTML, just right out of the box. so...
-	require("login_header.php");
-	// Wasn't that simple?
-	
-	// Now produce a form...
-	require("login_body.php");
-	
-	// easy, this function's done!
+a:link {
+	color: #000;
 }
-
-function parselogin ($username, $password, $organisation, $udid_browser, $udid_ipaddr) {
-	// Initialise the database for login verification (BASIC Auth)
-	initdatabase();
-	
-	// Let's actually allocate some RAM to this...
-	$username = $username;
-	$password = $password;
-	$organisation = $organisation;
-	
-	// Verification process
-	
-	// SOME SQL QUERY....
-	
+a:visited {
+	color: #000;
 }
-
-function loginfailed () {
-	require("login_failed.php");
+a:hover {
+	color: #000;	
 }
-
-function loginpassed () {
-	require("login_worked.php");
+#login_container {
+	background: #C30;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	margin: 65px auto;
+	padding: 0 0;
+	height: 40px;
+	width: 350px;
+	border: 1px solid #333;
+	text-align: left;
 }
+#login_padding {
+	margin: 0px 5px;	
+}
+input {
+	background-color: #FFF;
+	border: 1px solid #333;	
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+}
+.centreme {
+	text-align: center;	
+}
+</style>
+</head>
+<body>
+<div id="login_container"><div id="login_padding">
+  <h1><a href="login.php">The login you provided was invalid.</a></h1>
+</div></div>
+</body>
+</html>
 
-// Theoretically that's it for this file. :)
-
-// EOF;;
+EOD;
 
 ?>

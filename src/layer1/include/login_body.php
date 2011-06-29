@@ -47,17 +47,17 @@ echo <<<EOD
     <tr>
       <td align="right" valign="middle">Username:</td>
       <td align="center" valign="middle"><label for="username"></label>
-        <input name="username" type="text" id="username" size="30"></td>
+        <input name="username" type="text" id="username" size="30" value="DOMAIN\developer" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Please enter a username':this.value;"></td>
     </tr>
     <tr>
       <td align="right" valign="middle">Password:</td>
       <td align="center" valign="middle"><label for="password"></label>
-        <input name="password" type="password" id="password" size="30"></td>
+        <input name="password" type="password" id="password" size="30" value="password"onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'password':this.value;"></td>
     </tr>
     <tr>
       <td align="right" valign="middle">Organisation:</td>
       <td align="center" valign="middle"><label for="organization"></label>
-        <input name="organisation" type="text" id="organisation" size="30"></td>
+        <input name="organisation" type="text" id="organisation" size="30" value="Beaconsfield IT, LLC"></td>
     </tr>
   </table>
   <p class="centreme"><input name="Login" type="submit" value="Login"> <input name="Clear" type="reset" value="Clear"></p></form>
