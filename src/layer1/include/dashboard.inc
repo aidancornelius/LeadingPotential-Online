@@ -37,6 +37,22 @@
 /// Getters, Setters, Queries, Functions for Dashboard .hdr file
 /// © 2011 Beaconsfield IT - Created 29 June 2011 by Aidan Cornelius-Bell
 
+// Includes, etc.
+
+// Die Functions (just makes life easier if we define errors now)
+function superdie ($message) { 
+	die("<br />A Limited Error Occurred: $udid_thedate $udid_thetime - $message");
+}
+
+// Database function (specifically for dashboard)
+
+function initdatabase () {
+	require("config.php");
+	mysql_connect("","","","");
+	return;
+}
+
+
 function initdashboard () {
 
 }
