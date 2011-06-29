@@ -39,6 +39,6 @@
 
 require("include/login.inc");
 
-initlogin($udid_browser, $udid_ipaddr) or superdie("Disabled");
+initlogin() or superdie("Disabled");
 
 ?>
