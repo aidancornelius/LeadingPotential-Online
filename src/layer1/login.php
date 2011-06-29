@@ -39,6 +39,6 @@
 
 require("include/login.inc");
 
-initlogin() or superdie("Disabled");
+initlogin();
 
 ?>

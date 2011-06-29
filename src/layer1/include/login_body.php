@@ -37,7 +37,7 @@
 /// Login body/footer template
 /// © 2011 Beaconsfield IT - Created 29 June 2011 by Aidan Cornelius-Bell
 
-echo <<<EOD 
+echo <<<EOD
 
 <div id="login_container"><div id="login_padding">
   <h1>Login to Leading Potential Online</h1>

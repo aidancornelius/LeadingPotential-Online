@@ -37,7 +37,7 @@
 /// Login header template
 /// © 2011 Beaconsfield IT - Created 29 June 2011 by Aidan Cornelius-Bell
 
-echo <<<EOD 
+echo <<<EOD
 
 <!DOCTYPE HTML>
 <html>
