@@ -37,25 +37,7 @@
 /// Login Master Page
 /// © 2011 Beaconsfield IT - Created 28 June 2011 by Aidan Cornelius-Bell
 
-// Header files, includes and yummy stuff...
-require("login.hdr.php");
-require("functions.fnc.php");
-
-// Seeing as this is the 'login page' let's give the user a udid 
-$udid_session = session_id();
-
-// Server attributes that may be needed at some point... Let's put them in RAM.
-$udid_thetime = time();
-$udid_thedate = date();
-
-// Nice and easy now, let's get some info about our user.
-$udid_browser = $_SERVER['HTTP_USER_AGENT'];
-$udid_ipaddr = $_SERVER['REMOTE_ADDR'];
-
-// Die Functions (just makes life easier if we define errors now)
-function superdie ($message) { 
-	die("<br />A Limited Error Occurred: $udid_thedate $udid_thetime - $message")
-}
+require("include/login.inc");
 
 initlogin($udid_browser, $udid_ipaddr) or superdie("Disabled");
 
