@@ -34,74 +34,11 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-/// Login header template
+/// Getters, Setters, Queries, Functions for Dashboard .hdr file
 /// © 2011 Beaconsfield IT - Created 29 June 2011 by Aidan Cornelius-Bell
 
-echo <<<EOD
+function initdashboard () {
 
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Leading Potential Online :: Redirecting</title>
-
-<link href='http://fonts.googleapis.com/css?family=Raleway:100&v1' rel='stylesheet' type='text/css'>
-
-<style type="text/css">
-h1 {
-	font-family: 'Raleway', arial, serif;
-	font-weight: 100;
-	font-size: 18px;
-	text-align: center;
 }
-p {
-	font-size: 12px;	
-}
-a {
-	color: #000;
-}
-a:link {
-	color: #000;
-}
-a:visited {
-	color: #000;
-}
-a:hover {
-	color: #000;	
-}
-#login_container {
-	background: #6C0;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	margin: 65px auto;
-	padding: 0 0;
-	height: 40px;
-	width: 350px;
-	border: 1px solid #333;
-	text-align: left;
-}
-#login_padding {
-	margin: 0px 5px;	
-}
-input {
-	background-color: #FFF;
-	border: 1px solid #333;	
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	font-size: 12px;
-}
-.centreme {
-	text-align: center;	
-}
-</style>
-</head>
-<body>
-<div id="login_container"><div id="login_padding">
-  <h1><a href="dashboard.php">Login succeded redirecting you now.</a></h1>
-</div></div>
-</body>
-</html>
-
-EOD;
 
 ?>
