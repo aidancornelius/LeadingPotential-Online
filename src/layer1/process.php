@@ -52,9 +52,13 @@ require("include/login.inc");
 // Parse login function
 ///parselogin($, $, $, $, $);
 
-loginfailed();
+$which = rand(1, 2);
 
-loginpassed();
+if ($which == 1) {
+loginfailed(); }
+
+if ($which == 2) {
+loginpassed(); }
 
 return;
 

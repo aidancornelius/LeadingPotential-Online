@@ -102,7 +102,7 @@ function loginfailed () {
 }
 
 function loginpassed () {
-	require("login_worked.php");
+	require("login_passed.php");
 }
 
 // Theoretically that's it for this file. :)

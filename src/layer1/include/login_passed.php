@@ -97,7 +97,7 @@ input {
 </head>
 <body>
 <div id="login_container"><div id="login_padding">
-  <h1><a href="login.php">Login succeded redirecting you now.</a></h1>
+  <h1><a href="dashboard.php">Login succeded redirecting you now.</a></h1>
 </div></div>
 </body>
 </html>
