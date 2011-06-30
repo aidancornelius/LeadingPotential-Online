@@ -43,7 +43,7 @@
 $thevalue = 100; // this sets the weight for the questions
 
 // Some functions [ to be called later ]
-function parsesurvey ($q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8, $q9, $q10) { // I suppose we could do from 1-10 whiles but no point at this stage.
+function parsesurvey_page1 ($q1, $q2, $q3, $q4, $q5, $q6, $q7, $q8, $q9, $q10) { // I suppose we could do from 1-10 whiles but no point at this stage.
 	
 }
 
