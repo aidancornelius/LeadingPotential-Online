@@ -54,7 +54,7 @@ function initdatabase () {
 
 
 function initdashboard () {
-
+	// This will remain empty for now
 }
 
 ?>
