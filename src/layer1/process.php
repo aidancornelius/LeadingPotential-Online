@@ -37,31 +37,19 @@
 /// Simple logic engine for login security
 /// © 2011 Beaconsfield IT - Created 28 June 2011 by Aidan Cornelius-Bell
 
-// POST Getters
-$username = $_POST['username'];
-$password = $_POST['password'];
-$organisation = $_POST['organisation'];
-
-
 // Some includes
 require("include/login.inc");
 
 // Pull some getters
-///getters();
+// Security stuff is partially disabled for now.
+//getters();
+
+// Notice
+initlogin();
 
 // Parse login function
-///parselogin($, $, $, $, $);
+parselogin();
 
-$which = rand(1, 2);
 
-if ($which == 1) {
-loginfailed(); }
-
-if ($which == 2) {
-loginpassed(); }
-
-return;
-
-superdie("file should've ended?");
 
 ?>

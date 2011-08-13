@@ -62,7 +62,7 @@ function superdie ($message) {
 
 // Database function (specifically for login)
 
-function initdatabase () {
+function initdatabase() {
 	require("config.php");
 	mysql_connect("","","","");
 	return;
@@ -71,10 +71,12 @@ function initdatabase () {
 // Login master function
 // This needs to produce the login form, check with the database, do all that jazz - you know.
 
-function initlogin () {	
+function initlogin() {	
 	// Let's produce some HTML, just right out of the box. so...
 	require("login_header.php");
 	// Wasn't that simple?
+	
+	echo "<h2>Processing your login...</h2>";
 	
 	// Now produce a form...
 	require("login_body.php");
@@ -82,26 +84,42 @@ function initlogin () {
 	// easy, this function's done!
 }
 
-function parselogin ($username, $password, $organisation, $udid_browser, $udid_ipaddr) {
+function parselogin() {
 	// Initialise the database for login verification (BASIC Auth)
-	initdatabase();
+	//initdatabase();
 	
-	// Let's actually allocate some RAM to this...
-	$username = $username;
-	$password = $password;
-	$organisation = $organisation;
+	$organisation = $_POST['pkorg'];
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	
 	
 	// Verification process
-	
+	if($username == "AidanCornelius") {
+		if($password == "rabbit10") {
+		loginpassed();
+		}
+	}
+	elseif($username == "MichaelBell") {
+		if($password == "fri12dges") {
+		loginpassed();
+		}
+		else {
+		loginfailed();
+		}
+		
+	}
+	else {
+		loginfailed();	
+	}
 	// SOME SQL QUERY....
 	
 }
 
-function loginfailed () {
+function loginfailed() {
 	require("login_failed.php");
 }
 
-function loginpassed () {
+function loginpassed() {
 	require("login_passed.php");
 }
 

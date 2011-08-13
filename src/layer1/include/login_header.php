@@ -43,59 +43,14 @@ echo <<<EOD
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Leading Potential Online :: Login</title>
-
-<link href='http://fonts.googleapis.com/css?family=Raleway:100&v1' rel='stylesheet' type='text/css'>
-
+<title>Generative Leadership Training - Login</title>
 <style type="text/css">
-h1 {
-	font-family: 'Raleway', arial, serif;
-	font-weight: 100;
-	font-size: 18px;
-	text-align: center;
-}
-p {
-	font-size: 12px;	
-}
-a {
-	color: #0000CC;
-}
-a:link {
-	color: #0000CC;
-}
-a:visited {
-	color: #0000CC;
-}
-a:hover {
-	color: #0000CC;	
-}
-#login_container {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	margin: 65px auto;
-	padding: 0 0;
-	height: 200px;
-	width: 350px;
-	border: 1px dashed #333;
-	text-align: left;
-}
-#login_padding {
-	margin: 0px 5px;	
-}
-input {
-	background-color: #FFF;
-	border: 1px solid #333;	
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	font-size: 12px;
-}
-.centreme {
-	text-align: center;	
-}
+@import url("/resources/style.css");
 </style>
 </head>
 <body>
-
+<div id="header"><div id="presenter"><div style="float:left;">Leading Potential - Generative Leadership Development Center</div> <div style="float:right;"><a href="/index.php">Home</a> <a href="/about.php">About</a> <a href="/login.php?developer=Tester">Tester Login</a> <a href="/login.php?developer=Developer">Developer Login</a></div></div></div>
+<div id="container">
 
 EOD;
 
