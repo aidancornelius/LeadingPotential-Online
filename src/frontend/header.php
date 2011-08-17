@@ -112,4 +112,4 @@ body,td,th {
 </style>
 </head>
 <body>
-<div id="header"><div id="presenter"><div style="float:left;">Generative Leadership Program ßeta</div> <div style="float:right;"><a href="index.php">Home</a> <a href="about.php">About</a> <a href="http://beaconsfieldit.us2.list-manage.com/subscribe?u=2a83f10ae5ed89247e6ada7b2&id=b7e3c30bb7">Tester Registration</a>  <a href="login.php?developer=Developer">Developer Login</a></div></div></div>
+<div id="header"><div id="presenter"><div style="float:left;">Generative Leadership Program ßeta</div> <div style="float:right;"><a href="index.php">Home</a> <a href="about.php">About</a> <a href="http://beaconsfieldit.us2.list-manage.com/subscribe?u=2a83f10ae5ed89247e6ada7b2&id=b7e3c30bb7">Tester Registration</a>  <a href="login.php?developer=AFLN-GA2G-DEVE-LOPE-RRSS-8519-1246-9688-82514">Developer Login</a></div></div></div>

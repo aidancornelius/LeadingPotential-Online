@@ -41,7 +41,7 @@ $name = $_POST['username'];
 
 echo <<<EOD
 
-<meta http-equiv="refresh" content="3; url=http://genleadership.leadingpotential.com.au/l1/dashboard.php?username=$name">
+<meta http-equiv="refresh" content="3; url=http://genleadership.com/l1/dashboard.php?username=$name">
 
 EOD;
 
