@@ -1,8 +1,8 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Generative Leadership Training</title>
+<title>Generative Leadership Training - Login</title>
 <style type="text/css">
 body {
 	margin-left: 0px;
@@ -113,7 +113,3 @@ body,td,th {
 </head>
 <body>
 <div id="header"><div id="presenter"><div style="float:left;">Leading Potential - Generative Leadership Program</div> <div style="float:right;"><a href="index.php">Home</a> <a href="about.php">About</a> <a href="http://beaconsfieldit.us2.list-manage.com/subscribe?u=2a83f10ae5ed89247e6ada7b2&id=b7e3c30bb7">Tester Registration</a>  <a href="login.php?developer=Developer">Developer Login</a></div></div></div>
-<div id="container">Err.</div>
-<div id="footer"><div style="float:left;">&copy; 2011 <a href="http://www.leadingpotential.com.au">Leading Potential</a>. A <a href="http://www.beaconsfieldit.net">Beaconsfield IT</a> project.</div></div>
-</body>
-</html>
