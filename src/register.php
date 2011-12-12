@@ -1,0 +1,4 @@
+<?php require("header.php"); ?>
+<div id="container"><p>Thank you for your interest in testing the Generative Leadership Program.</p>
+<ol><li>Tester Registration is closed until further notice. <strike><a href="/register_form.php">Register for Window 1</a></strike> <strike><a href="/register_form.php">Register for Window 2</a></strike>.</li><li>Focus group registration is closed until the 30th of November 2011.</li><li>Earlybird Registration is closed until the 15th of March 2012 at the earliest.</li><li>Site License Registration is closed until the 25th of March 2012 at the earliest.</li></ol></div>
+<?php require("footer.php"); ?>

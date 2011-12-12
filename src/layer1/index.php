@@ -1,1 +1,0 @@
-﻿<?php header("Location: http://genleadership.leadingpotential.com.au/denied.php"); ?>

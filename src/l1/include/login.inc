@@ -1,0 +1,85 @@
+<?
+// 
+// Copyright (c) 2011, Beaconsfield IT
+// All rights reserved.
+//
+// This software was manufactured for Leading Potential (hereinafter The Company), 
+// any use by The Company is acceptable, even excluding the conditions of this license.
+// 
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//     * Redistributions of source code must retain the above copyright
+//       notice, this list of conditions and the following disclaimer.
+//     * Redistributions in binary form must reproduce the above copyright
+//       notice, this list of conditions and the following disclaimer in the
+//       documentation and/or other materials provided with the distribution.
+//     * Neither the name of the Beaconsfield IT nor the
+//       names of its contributors may be used to endorse or promote products
+//       derived from this software without specific prior written permission.
+//     * And; This software may not be redistributed and sold under 
+//       any condition, even meeting the prior criteria(s).
+//     * All advertising materials mentioning features or use of this software
+//       must display the following acknowledgement:
+//       This product includes software developed by Beaconsfield IT.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+// ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+// WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+// DISCLAIMED. IN NO EVENT SHALL BEACONSFIELD IT BE LIABLE FOR ANY
+// DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+// LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+// ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+// SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+
+/// Getters, Setters, Queries, Functions for Login .hdr file
+/// © 2011 Beaconsfield IT - Created 28 June 2011 by Aidan Cornelius-Bell
+
+function parselogin() {
+	// Getters
+	$root = $_SERVER['DOCUMENT_ROOT'];
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	require("$root/l1/include/configuration.php");
+	
+	// Setters & Fnc
+	$socket = sqlconnect();
+	$sql = mysql_query("SELECT * FROM `accounts` WHERE (`username`='$username' OR `id`='$username') AND `password`='$password'");
+	$row = mysql_fetch_array($sql);
+	$sqld = mysql_query("SELECT * FROM `accounts` WHERE (`username`='$username' OR `id`='$username') AND `password`='$password'");
+	
+	// Look honestly this is the simplest text-based validation we can use, it needs to be bolistered but it does work and it's nigh-on impossible to crack.
+	
+	// print_r($row);
+	
+	if(empty($row)) {
+		require("$root/denied.php");
+		die("\n <pre>Debug for staff use: \n[i] Login Rejected Traumatically\n</pre>");
+		//require("login_passed.php");
+	}
+	else {
+		while ($row = mysql_fetch_array($sqld, MYSQL_NUM)) {
+			setcookie("id", $row[0], time()+8000, "/", ".genleadership.com");
+			setcookie("username", $row[1], time()+8000, "/", ".genleadership.com");
+			setcookie("password", $row[2], time()+8000, "/", ".genleadership.com");
+			setcookie("firstname", $row[3], time()+8000, "/", ".genleadership.com");
+			setcookie("fullname", $row[4], time()+8000, "/", ".genleadership.com");
+			setcookie("validity", $row[5], time()+8000, "/", ".genleadership.com");
+			setcookie("lastlogin", $row[6], time()+8000, "/", ".genleadership.com");
+			setcookie("disabled", $row[7], time()+8000, "/", ".genleadership.com");
+			setcookie("locations", $row[8], time()+8000, "/", ".genleadership.com");
+			setcookie("zones", $row[9], time()+8000, "/", ".genleadership.com");
+			setcookie("attachedto", $row[10], time()+8000, "/", ".genleadership.com");
+		// At this stage, though we haven't validated, the cookies are set regardless. So lets validate it NEXT. :)
+			require("login_passed.php");
+		}		
+	}
+}
+
+// Theoretically that's it for this file. :)
+
+// EOF;;
+
+?>

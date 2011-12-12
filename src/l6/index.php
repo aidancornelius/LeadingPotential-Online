@@ -1,0 +1,1 @@
+<?php header("Location: http://genleadership.com/denied.php"); ?>
