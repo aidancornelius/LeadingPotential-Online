@@ -10,3 +10,5 @@
 *.mode2v3
 
 *.o
+
+src/.DS_Store
