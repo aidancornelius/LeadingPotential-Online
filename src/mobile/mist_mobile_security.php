@@ -12,7 +12,3 @@
    @Custom:		A Beaconsfield IT, Leading Potential Joint Venture
 */
 ?>
-</div>
-</body>
-</html>
-<!-- END PAGE -->

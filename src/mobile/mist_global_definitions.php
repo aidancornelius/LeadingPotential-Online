@@ -11,8 +11,7 @@
    @Custom:		Generative Leadership Mobile Frontend (iOS)
    @Custom:		A Beaconsfield IT, Leading Potential Joint Venture
 */
+
+//define()
+
 ?>
-</div>
-</body>
-</html>
-<!-- END PAGE -->

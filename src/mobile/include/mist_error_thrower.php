@@ -11,8 +11,14 @@
    @Custom:		Generative Leadership Mobile Frontend (iOS)
    @Custom:		A Beaconsfield IT, Leading Potential Joint Venture
 */
+
+// This just throws nice unified errors, it's not a big deal.
+// and yes, it does just die no matter what - it does it cleanly though.
+
+try {
+	die("Mist Engine Error: (Fatal) ". $error . " [Extension tried to continue]");
+} catch (Exception $e) {
+	die("Mist Engine Error: (Fatal) " . $e->getMessage() . " [Extension died totally]");
+}
+
 ?>
-</div>
-</body>
-</html>
-<!-- END PAGE -->

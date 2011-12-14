@@ -21,19 +21,17 @@
    	<meta name="robots" content="noindex,nofollow">
     <link rel="apple-touch-icon-precomposed" href="http://genleadership.com/precomp.png">
     <title>Vision Building</title>
-    <link rel='stylesheet' id='mapcss'  href='http://genleadership.com/mobileapp/sora/visionbuilding/resources/master.css' type='text/css'>
+    <link rel='stylesheet' id='mapcss'  href='http://genleadership.com/mobile/resources/master.css' type='text/css'>
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
     <style type="text/css">
 	/* Mobile CSS fixes */
 			* {
 				-webkit-touch-callout: none;
-				-webkit-user-select: none;
+				/* -webkit-user-select: none; */
 			}
 	</style>
 </head>
 
 <body>
 <div id="grand_container">
-  <div class="grand_header_roll"><div class="grand_header_roll_userfloat"><a href="#"><?////////////?></a></div></div>
-  <div class="grand_spacerheader"></div>
   <!-- End Header -->

@@ -20,12 +20,3 @@ Start the actual page
 
 ---
 
-  <div class="grand_bigbutton"><div class="grand_bigbutton_text"><a href="#">Watch the video</a></div></div>
-  <div class="grand_spacer"></div>
-  <div class="grand_bigbutton"><div class="grand_bigbutton_text"><a href="#">Read the material</a></div></div>
-  <div class="grand_spacer"></div>
-  <div class="grand_bigbutton"><div class="grand_bigbutton_text"><a href="#">Take the survey</a></div></div>
-  <div class="grand_spacer"></div>
-  <div class="grand_bigbutton"><div class="grand_bigbutton_text"><a href="#">View the forum</a></div></div>
-  <div class="grand_spacer"></div>
-  <div class="grand_developerbutton"><div class="grand_bigbutton_text"><a href="#">Developer Options</a></div></div>
