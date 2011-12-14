@@ -2,7 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Generative Leadership Training - Login</title>
+<title>Generative Leadership</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=850; maximum-scale=1">
+
+<link rel="apple-touch-icon-precomposed" href="http://genleadership.com/precomp.png">
+
+
 <style type="text/css">
 body {
 	margin-left: 0px;
